@@ -5,9 +5,9 @@ window.SITE = {
   logo: null,                                          // PLACEHOLDER — e.g. 'images/logo.svg'
   tagline: { he: 'נדל״ן בפורטוגל', en: 'Portugal Real Estate' },
 
-  phone: '+351 900 000 000',      // shown on the site
-  phoneHref: '+351900000000',     // used for tel: links (no spaces)
-  whatsapp: '351900000000',       // international format, digits only
+  phone: '+972 504 002 077',      // shown on the site
+  phoneHref: '+972504002077',     // used for tel: links (no spaces)
+  whatsapp: '972504002077',       // international format, digits only
   email: 'info@example.com',
 
   // Map look — one of: gray, sand, natgeo, topo, soft, street, satellite, smooth, toner, terrain
