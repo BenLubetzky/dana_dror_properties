@@ -116,12 +116,16 @@
   // Bilingual inline text: S.L('שלום','Hello')
   S.L = (he, en) => `<span data-lang="he">${he}</span><span data-lang="en">${en}</span>`;
 
-  // Logo: shows a clearly marked placeholder until SITE.logo / SITE.name are filled in
+  // Logo: rooftops mark (dark roofs follow the text colour, so it works on the dark footer too).
+  // The business name is still a placeholder until SITE.name is filled in.
+  const MARK = `<svg class="logo__mark" viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 40V27l8-7 8 7v13" stroke="currentColor" stroke-width="3"/>
+    <path d="M15 40V21l10-9 10 9v19" stroke="#b8862f" stroke-width="3.5"/>
+    <path d="M30 40V29l7-6 7 6v11" stroke="currentColor" stroke-width="3"/>
+    <path d="M3 40h42" stroke="currentColor" stroke-width="3"/></svg>`;
   S.logoHTML = () => `
     <a class="logo" href="index.html">
-      ${S.logo
-        ? `<img class="logo__img" src="${S.logo}" alt="">`
-        : `<span class="logo__ph" title="Logo goes here">${S.icon('image')}<small>LOGO</small></span>`}
+      ${MARK}
       <span class="logo__text"><b class="is-ph">${S.L(S.name.he, S.name.en)}</b><small>${S.L(S.tagline.he, S.tagline.en)}</small></span>
     </a>`;
 

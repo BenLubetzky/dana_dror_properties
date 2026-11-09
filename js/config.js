@@ -2,7 +2,6 @@
 // All values below are placeholders until the real details are provided.
 window.SITE = {
   name: { he: '[שם העסק]', en: '[Business name]' },   // PLACEHOLDER
-  logo: null,                                          // PLACEHOLDER — e.g. 'images/logo.svg'
   tagline: { he: 'נדל״ן בפורטוגל', en: 'Portugal Real Estate' },
 
   phone: '+972 504 002 077',      // shown on the site
