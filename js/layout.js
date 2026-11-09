@@ -126,7 +126,7 @@
   S.logoHTML = () => `
     <a class="logo" href="index.html">
       ${MARK}
-      <span class="logo__text"><b class="is-ph">${S.L(S.name.he, S.name.en)}</b><small>${S.L(S.tagline.he, S.tagline.en)}</small></span>
+      <span class="logo__text"><b>${S.L(S.name.he, S.name.en)}</b><small>${S.L(S.tagline.he, S.tagline.en)}</small></span>
     </a>`;
 
   // ---------- property card (used on home + listings)

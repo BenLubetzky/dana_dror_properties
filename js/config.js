@@ -1,7 +1,7 @@
 // Business details — edit these in one place and the whole site updates.
 // All values below are placeholders until the real details are provided.
 window.SITE = {
-  name: { he: '[שם העסק]', en: '[Business name]' },   // PLACEHOLDER
+  name: { he: 'DanaDrorProperties', en: 'DanaDrorProperties' },
   tagline: { he: 'נדל״ן בפורטוגל', en: 'Portugal Real Estate' },
 
   phone: '+972 504 002 077',      // shown on the site

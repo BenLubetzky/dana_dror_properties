@@ -130,7 +130,6 @@ bdi { unicode-bidi: isolate; }
 .nav { display: flex; align-items: center; gap: 32px; min-height: 76px; }
 .logo { display: flex; align-items: center; gap: 12px; }
 .logo__mark { width: 48px; height: 48px; flex: none; color: var(--ink); }
-.logo__text b.is-ph { border-bottom: 2px dashed var(--gold); padding-bottom: 1px; }
 .logo__text { display: flex; flex-direction: column; line-height: 1.1; }
 .logo__text b { font-family: var(--serif); font-size: 23px; font-weight: 700; letter-spacing: .01em; }
 .logo__text small { font-size: 11px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
@@ -519,4 +518,9 @@ bdi { unicode-bidi: isolate; }
   .topbar__contact .hide-xs { display: none; }
   .lightbox__prev { inset-inline-start: 8px; }
   .lightbox__next { inset-inline-end: 8px; }
+}
+
+@media (max-width: 400px) {
+  .header .logo__text b { font-size: 19px; }
+  .header .logo__mark { width: 40px; height: 40px; }
 }
