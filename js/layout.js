@@ -29,7 +29,8 @@
       villa: { he: 'וילה', en: 'Villa' },
       land: { he: 'קרקע', en: 'Land' },
       farm: { he: 'קינטה (חווה)', en: 'Quinta (farm)' },
-      penthouse: { he: 'פנטהאוז', en: 'Penthouse' }
+      penthouse: { he: 'פנטהאוז', en: 'Penthouse' },
+      business: { he: 'עסק', en: 'Business' }
     },
     properties: { he: 'נכסים', en: 'properties' },
     property: { he: 'נכס', en: 'property' },

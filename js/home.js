@@ -43,10 +43,11 @@
   bars.forEach((b, i) => b.addEventListener('click', () => go(i)));
   timer = setTimeout(() => go(1), 6000);
 
-  // ---------- featured: one property from four different budgets
+  // ---------- featured: up to four properties, spread across as many budgets as possible
   const featured = document.getElementById('featured');
   const renderFeatured = () => {
-    const picks = [2, 3, 4, 5].map((id) => props.find((p) => S.inRange(p, S.rangeById(id)))).filter(Boolean);
+    const spread = S.ranges.map((r) => props.find((p) => S.inRange(p, r))).filter(Boolean);
+    const picks = [...new Set([...spread, ...props])].slice(0, 4);
     featured.innerHTML = picks.map(S.card).join('');
   };
 
